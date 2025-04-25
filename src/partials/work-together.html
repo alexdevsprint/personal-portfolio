@@ -1,0 +1,64 @@
+<footer class="footer" id="work-together">
+  <div class="footer-content container">
+    <div class="footer-header">
+      <img
+        src="/img/header/head-logo.png"
+        srcset="
+          /img/header/head-logo.png        1x,
+          /img/header/head-logo@2x-min.png 2x
+        "
+        alt="head-logo"
+        class="avatar"
+      />
+      <h2 class="footer-text">
+        <span>LET'S</span> <strong>WORK</strong><br /><span class="togetherWork"
+          >TOGETHER</span
+        >
+      </h2>
+    </div>
+    <form class="footer-form" id="contactForm">
+      <div class="imput-gorup">
+        <input
+          id="emailInput"
+          type="email"
+          class="top-input"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <span id="emailError" class="error-message"></span>
+        <input
+          type="text"
+          class="bottom-input"
+          placeholder="comments"
+          required
+        />
+        <button type="submit" aria-label="sendBtn" class="send-btn">Send</button>
+      </div>
+    </form>
+
+    <div class="footer-contacts">
+      <ul class="foter-list">
+        <li class="foter-item">
+          <a class="cont-email" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="foter-item">
+          <a class="cont-tel" href="tel:+380111111111">+380 11 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal" id="thankYouModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="closedModal" id="closeModal">&times;</button>
+      <h2 class="modal-text">Thank you for your interest in cooperation!</h2>
+      <p class="modal-description">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</footer>

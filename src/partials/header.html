@@ -1,0 +1,59 @@
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">
+      <a href="./index.html">
+      <img
+        src="/img/header/head-logo.png"
+        srcset="
+          /img/header/head-logo.png        1x,
+          /img/header/head-logo@2x-min.png 2x
+        "
+        alt="head-logo"
+      />
+      </a>
+      <span>jefferson*</span>
+    </div>
+    <nav class="nav">
+      <button class="menu-btn" aria-label="Menu">Menu</button>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about-me">About me</a></li>
+        <li class="nav-item"><a href="#benefits">Benefits</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <svg class="menu-svg" width="28" height="28" id="burger-icon">
+      <use href="/img/header/menu.svg#icon-menu"></use>
+    </svg>
+    <a class="order-btn" href="#work-together">Order the project</a>
+  </div>
+</header>
+
+<!-- MENU -->
+
+<div class="mobile-menu" data-menu>
+  <div class="container mobile-menu-container">
+    <button class="mobile-menu-close" aria-label="closeMenu" type="button" data-menu-close>
+      <svg class="icon-close" width="28" height="28">
+        <use href="/img/header/menu.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#about-me" class="mobile-menu-link">About me</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#benefits" class="mobile-menu-link">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#projects" class="mobile-menu-link">Projects</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#faq" class="mobile-menu-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="mobile-menu-btn mobile-menu-link" href="#work-together">Order the project</a>
+  </div>
+</div>

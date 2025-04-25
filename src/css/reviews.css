@@ -1,0 +1,123 @@
+.section-reviews {
+  padding: 64px 0;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.container-reviews {
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+
+.slider-item.swiper-slide {
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 32px 24px;
+  height: auto;
+  /* вирівняти всі карточки по висоті */
+}
+
+.slider-item-img {
+  width: 48px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.slider-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: #fafafa;
+}
+
+.slider-item-info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  max-height: 100px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.slider-nav-prev,
+.slider-nav-next {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.5);  
+  transition: 250ms ease-in;
+}
+
+.slider-nav-prev:hover,
+.slider-nav-next:hover {
+  box-shadow: 0 0 25px rgb(0, 65, 232);
+}
+
+.slider-nav-prev:disabled,
+.slider-nav-next:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  box-shadow: none;
+  cursor: default;
+}
+
+.slider-nav-prev:disabled .slider-arrow-prev,
+.slider-nav-next:disabled .slider-arrow-next {
+  fill: rgba(250, 250, 250, 0.2);
+}
+
+.slider-error {
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa99;
+}
+
+.slider-arrow-next,
+.slider-arrow-prev {
+  fill: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider-nav {
+    gap: 20px;
+  }
+  .slider-nav-prev,
+  .slider-nav-next {
+    width: 68px;
+    height: 68px;
+  }
+  .section-reviews {
+    padding: 96px 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section-reviews {
+    padding: 164px 0;
+  }
+}
+

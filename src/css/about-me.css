@@ -1,0 +1,375 @@
+.aboutme {
+  padding: 64px 0;
+}
+
+.aboutme-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.aboutme-preson {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.aboutme-person-wrapper {
+  background-color: #242527;
+  padding: 32px 32px 272px;
+  border-radius: 24px;
+  /* border-top-left-radius: 24px;    
+  border-bottom-left-radius: 24px;  */
+}
+
+.aboutme-preson-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.aboutme-span-red {
+  color: #0041e8;
+}
+
+.aboutme-span-gray {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-pic {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.aboutme-pic img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.aboutme-ac-item::after {
+  content: '';
+  display: block;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutme-ac-item:last-child::after {
+  margin-bottom: 0;
+}
+
+.aboutme-ac {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aboutme-ac-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-ac-trigger {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.trigger-icon {
+  display: block;
+  stroke: #fbfbfb;
+}
+
+.aboutme-ac-item.is-active .trigger-icon {
+  transform: rotate(180deg);
+}
+
+.aboutme-ac-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.aboutme-ac-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.aboutme-ac-role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aboutme-ac-role-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.aboutme-ac-education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aboutme-ac-education-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.aboutme-swiper {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  height: 130px;
+  position: relative;
+  /* display: flex; */ 
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.aboutme-swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.aboutme-swiper-slide {
+  flex-shrink: 0;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  padding: 53px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.aboutme-active-slide {
+  background-color: #0041e8;
+}
+
+.aboutme-with-shadow {
+  box-shadow: 0 0 50px rgb(0, 65, 232);
+  z-index: 10;
+}
+
+.aboutme-swiper-button-next::after {
+  display: none;
+}
+
+.aboutme-swiper .aboutme-swiper-button-prev {
+  display: none;
+}
+
+.aboutme-swiper .aboutme-swiper-button-next {
+  position: absolute;
+  right: -1px;
+  top: 0px;
+  z-index: 5;
+  width: 84px;
+  background-color: rgba(28, 29, 32, 1);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.aboutme-swiper-button-next .aboutme-swiper-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.aboutme-swiper-icon {
+  stroke: #3b3b3b;
+  transition: stroke 0.3s ease;
+  cursor: pointer;
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 30px rgb(0, 65, 232);
+  }
+  100% {
+    transform: rotate(-360deg);
+    box-shadow: none;
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 30px rgb(0, 65, 232);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: none;
+  }
+}
+
+.rotate-right {
+  animation: rotateRight 1.2s ease-in-out forwards;
+}
+
+.rotate-left {
+  animation: rotateLeft 1.2s ease-in-out forwards;
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutme {
+    padding-bottom: 96px;
+  }
+
+  .aboutme-container {
+    gap: 64px;
+  }
+
+
+  .aboutme-person-wrapper {
+    padding: 64px 64px 436px;
+  }
+
+  .aboutme-preson-text {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+
+  .aboutme-ac-item::after {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .aboutme-ac-education-list:last-child {
+    width: 455px;
+  }
+
+  .aboutme-ac {
+    margin-bottom: 8px;
+  }
+
+  .aboutme-ac-trigger {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutme-ac-trigger:hover {
+    box-shadow: 0 0 25px rgb(0, 65, 232);
+  }
+
+  .aboutme-swiper {
+    height: 200px;
+  }
+
+  .aboutme-swiper-slide {
+    width: 200px;
+    height: 200px;
+  }
+
+  .aboutme-swiper .aboutme-swiper-button-next {
+    width: 105px;
+  }
+
+  .aboutme-swiper-button-next .aboutme-swiper-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutme-swiper-icon:hover {
+    stroke: #0041e8;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .aboutme {
+    padding: 96px 0 164px;
+  }
+
+  .aboutme-container {
+    gap: 96px;
+  }
+
+  .aboutme-preson {
+    flex-direction: row;
+  }
+
+  .aboutme-preson-text {
+    width: 552px;
+    font-size: 38px;
+    line-height: 1.05;
+  }
+
+  .aboutme-ac-panel {
+    width: 612px;
+    margin-left: 696px;
+  }
+
+  .aboutme-swiper {
+    padding: 0 32px;
+  }
+
+  .aboutme-swiper .aboutme-swiper-button-next {
+    width: 144px;
+  }
+
+  .aboutme-swiper .aboutme-swiper-button-prev {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 32px;
+    background-color: rgba(28, 29, 32, 1);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .aboutme-swiper-button-next .aboutme-swiper-icon {
+    margin-right: 32px;
+  }
+}

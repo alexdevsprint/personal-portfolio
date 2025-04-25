@@ -1,0 +1,135 @@
+.wrapper-for-li {
+  padding: 24px;
+  background-color: rgba(36, 37, 39, 1);
+}
+
+.benefits-section {
+        padding-bottom: 64px;
+}
+
+.benefits-title {
+    margin-bottom: 32px;
+    font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.4);
+}
+
+.benefits-list {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+margin-bottom: 32px;
+
+}
+
+.benefits-list-items {
+    border-radius: 20px;
+      overflow: hidden
+}
+.benefits-list-items:last-child {
+    background-color: transparent;
+    
+} 
+
+.benefits-icon {
+      position: relative;
+  display: inline-flex;
+  padding: 12px;
+  background-color: rgba(0, 65, 232, 1);
+  border-radius: 10px;
+  margin-bottom: 64px;
+}
+
+.inItems-text {
+    font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: -0.02em;
+margin-bottom: 8px;
+}
+
+.inItems-description {
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.6);
+}
+
+    .benefits-list-items:nth-child(4) .inItems-description {
+        letter-spacing: -0.042em;
+}
+
+
+
+@media only screen and (min-width: 375px) {
+   .inItems-description {
+    max-width: 290px;
+   } 
+}
+    
+.benefits-order {
+    padding: 18px 36px;
+    font-weight: 500;
+    font-size: 16px;
+letter-spacing: -0.02em;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+transition: 250ms ease-in;
+display: inline-block;
+}
+
+@media only screen and (min-width:768px) {
+    .benefits-list {
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 64px;
+    }
+
+    .benefits-list-items:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    .benefits-list-items:last-child {
+    background-color: transparent;
+} 
+
+.benefits-order:hover {
+    box-shadow:  0 0 25px rgb(0, 65, 232);
+}
+.benefits-section {
+    padding-bottom: 96px;
+}
+
+}
+
+@media only screen and (min-width:1440px) {
+
+.benefits-list {
+    margin-left: auto;
+    max-width: 680px;
+    max-height: 675px;
+}
+
+.inItems-description {
+    max-width: 332px;
+}
+
+.benefits-list-items:last-child {
+    background-color: transparent;
+} 
+
+.benefits-container {
+display: flex;
+justify-content: space-between;
+margin-bottom: 0;
+}
+
+.benefits-section {
+    padding-bottom: 164px;
+}
+}
