@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
   on: {
-    // Подія "slideChange" для контролю блокування кнопок
+    // Событие "slideChange" для контролю блокування кнопок
     slideChange: function () {
       sliderPrev.disabled = false;
       sliderNext.disabled = false;
